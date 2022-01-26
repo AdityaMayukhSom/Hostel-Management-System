@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top right, #ff512f, #dd2476);
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.login-background {
+    border-radius: 20px;
+    height: 60vh;
+    max-height: 350px;
+    width: 80%;
+    max-width: 350px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-text {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-input {
+    margin: 5px 0;
+    width: 100%;
+    height: 10vh;
+    max-height: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button {
+    height: 10vh;
+    margin: 10px 0;
+    max-height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: 2px solid white;
+
+
+    transition: all .3s;
+}
+
+.submit-button:hover {
+    transform: scale(1.03);
+}
+
+.submit-button:active {
+    transform: scale(.98);
+}
+
+
+.forget-Password-button-student {
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}

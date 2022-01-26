@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Profile Menu</title>
+    <link rel="stylesheet" href="/CSS/drop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img id="profile-picture" src="/Images/NoProfile.png" alt="">
+        </div>
+
+        <div class="menu">
+            <h3>User Name</h3>
+            <ul>
+                <li> <a href="#">My Profile</a></li>
+                <li> <a href="#">Request Edit</a></li>
+                <li> <a href="#">Mess</a></li>
+                <li> <a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
