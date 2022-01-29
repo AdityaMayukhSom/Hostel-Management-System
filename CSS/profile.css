@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.container {
+    border-radius: 15px;
+    margin: 2.5vh auto;
+    height: 95vh;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: rgb(255, 255, 255, 0.4);
+    box-shadow: rgba(255, 255, 255, .5);
+}
+
+
+.left-side {
+    height: 100%;
+    padding: 30px 0;
+}
+
+.profile-image-container {
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}

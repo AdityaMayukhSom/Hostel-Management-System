@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/application.css">
+    <link rel="stylesheet" href="./CSS/application.css">
     <title>HMS - Application Form</title>
 </head>
 
@@ -31,9 +31,9 @@
             </div>
         </div>
         <form action="#" method="post" id="application-form">
-            <input class="application-input" type="text" value="" placeholder="Name" name="">
-            <input class="application-input" type="text" value="" placeholder="Father’s Name" name="">
-            <input class="application-input" type="text" value="" placeholder="Mother’s Name" name="">
+            <input class="application-input" type="text" value="" placeholder="Name" name="Name">
+            <input class="application-input" type="text" value="" placeholder="Father’s Name" name="Father’s Name">
+            <input class="application-input" type="text" value="" placeholder="Mother’s Name" name="Mother’s Name">
             <div class="address">
                 <input class="address-input application-input" type="text" placeholder="Permanent Address">
                 <input class="address-input application-input" type="text" placeholder="City">
@@ -63,7 +63,8 @@
                     <span>Other</span>
                 </label>
             </div>
-            <input class="application-input" type="text" value="" placeholder="Department" name="" list="dept">
+            <input class="application-input" type="text" value="" placeholder="Department" name="Department"
+                list="dept">
             <datalist id="dept">
                 <option value="Computer Science Engineering">
                 <option value="Information Technology">
@@ -83,12 +84,13 @@
                 <option value="Pharmacy">
                 <option value="Architechture">
             </datalist>
-            <input class="application-input" type="number" value="" placeholder="Roll Number" name="">
+            <input class="application-input" type="number" value="" placeholder="Roll Number" name="Roll Number">
             <input class="application-input" min="1900" max="2099" step="1" type="number" value=""
-                placeholder="Year Admitted" name="">
+                placeholder="Year Admitted" name="Year Admitted">
 
             <input type="date" name="" id="birthdate" class="application-input">
-            <input class="application-input" type="text" value="" placeholder="Blood Group" name="" list="blood">
+            <input class="application-input" type="text" value="" placeholder="Blood Group" name="Blood Group"
+                list="blood">
             <datalist id="blood">
                 <option value="O+">
                 <option value="O−">
@@ -99,12 +101,12 @@
                 <option value="AB+">
                 <option value="AB-">
             </datalist>
-            <input class="application-input" type="number" value="" placeholder="Contact Number" name="">
-            <input class="application-input" type="email" value="" placeholder="Email Id" name="">
+            <input class="application-input" type="number" value="" placeholder="Contact Number" name="Contact Number">
+            <input class="application-input" type="email" value="" placeholder="Email Id" name="Email Id">
             <input class="submit-button" type="submit" value="Submit Application">
         </form>
     </div>
-    <script src="/JS/application.js"></script>
+    <script src="./JS/application.js"></script>
 </body>
 
 </html>
