@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/application.css">
+    <title>HMS - Application Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-heading">
+            <div class="colour-only">Hostel Application Form</div>
+            <div class="wave">
+                <svg id="svg" viewBox="0 0 1440 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M 0,500 C 0,500 0,125 0,125 C 56.00976763858414,112.54068307383226 112.01953527716827,100.08136614766451 165,104 C 217.98046472283173,107.91863385233549 267.93162652991094,128.21521848317425 311,144 C 354.06837347008906,159.78478151682575 390.25395860318804,171.05775991963839 440,163 C 489.74604139681196,154.94224008036161 553.052539057337,127.55374183827224 598,109 C 642.947460942663,90.44625816172776 669.5358851674642,80.7272727272727 717,99 C 764.4641148325358,117.2727272727273 832.8039202728065,163.53716725263686 885,171 C 937.1960797271935,178.46283274736314 973.2484337413096,147.1240582621798 1011,130 C 1048.7515662586904,112.8759417378202 1088.2023447619554,109.9665996986439 1141,113 C 1193.7976552380446,116.0334003013561 1259.9421872108699,125.00954294324461 1312,128 C 1364.0578127891301,130.9904570567554 1402.0289063945652,127.9952285283777 1440,125 C 1440,125 1440,500 1440,500 Z"
+                        stroke="none" stroke-width="0" fill="#ff690066" transform="rotate(-180 720 250)">
+                    </path>
+                    <path
+                        d="M 0,500 C 0,500 0,250 0,250 C 35.32687884955986,271.39542414549686 70.65375769911972,292.7908482909937 128,289 C 185.34624230088028,285.2091517090063 264.711848053081,256.2320309815221 314,253 C 363.288151946919,249.7679690184779 382.4988500885564,272.2810277829179 416,274 C 449.5011499114436,275.7189722170821 497.29275159269355,256.6438578868064 553,237 C 608.7072484073065,217.35614211319358 672.3301435406698,197.14354066985652 719,204 C 765.6698564593302,210.85645933014348 795.3866742446271,244.78197943376773 848,264 C 900.6133257553729,283.21802056623227 976.1231594808219,287.7285415950726 1029,275 C 1081.8768405191781,262.2714584049274 1112.1206878320866,232.303854185942 1147,216 C 1181.8793121679134,199.696145814058 1221.3940891908326,197.0560416611594 1271,205 C 1320.6059108091674,212.9439583388406 1380.3029554045838,231.4719791694203 1440,250 C 1440,250 1440,500 1440,500 Z"
+                        stroke="none" stroke-width="0" fill="#ff690088" transform="rotate(-180 720 250)">
+                    </path>
+                    <path
+                        d="M 0,500 C 0,500 0,375 0,375 C 43.04641941367734,356.37452747891825 86.09283882735468,337.74905495783656 132,345 C 177.90716117264532,352.25094504216344 226.67506410425864,385.378307647572 285,380 C 343.32493589574136,374.621692352428 411.20690475561076,330.7377144518756 453,335 C 494.79309524438924,339.2622855481244 510.49731687329825,391.67083454492575 558,395 C 605.5026831267018,398.32916545507425 684.8038277511963,352.57894736842115 746,341 C 807.1961722488037,329.42105263157885 850.2873721219169,352.0133759813899 889,369 C 927.7126278780831,385.9866240186101 962.0466837611355,397.3675487060192 1007,396 C 1051.9533162388645,394.6324512939808 1107.5258928335404,380.5164291945333 1154,380 C 1200.4741071664596,379.4835708054667 1237.8497449047027,392.56673451584766 1284,394 C 1330.1502550952973,395.43326548415234 1385.0751275476487,385.2166327420762 1440,375 C 1440,375 1440,500 1440,500 Z"
+                        stroke="none" stroke-width="0" fill="#ff6900ff" transform="rotate(-180 720 250)">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <form action="#" method="post" id="application-form">
+            <input class="application-input" type="text" value="" placeholder="Name" name="Name">
+            <input class="application-input" type="text" value="" placeholder="Father’s Name" name="Father’s Name">
+            <input class="application-input" type="text" value="" placeholder="Mother’s Name" name="Mother’s Name">
+            <div class="address">
+                <input class="address-input application-input" type="text" placeholder="Permanent Address">
+                <input class="address-input application-input" type="text" placeholder="City">
+                <input class="address-input application-input" type="text" placeholder="District" list="district">
+                <input class="address-input application-input" type="text" placeholder="State" list="state">
+                <input class="address-input application-input" type="number" placeholder="Pincode">
+            </div>
+            <div class="upload-file">
+                <label for="profile-photo">Upload Photo</label>
+                <input class="application-input" type="file" value="" id="profile-photo">
+            </div>
+            <div class="upload-file">
+                <label for="identification-proof">Upload Identification Proof</label>
+                <input class="application-input" type="file" value="" id="identification-proof">
+            </div>
+            <div class="gender-input">
+                <label for="male-gender" class="l-radio">
+                    <input type="radio" name="gender" id="male-gender" value="male">
+                    <span>Male</span>
+                </label>
+                <label for="female-gender" class="l-radio">
+                    <input type="radio" name="gender" id="female-gender" value="female">
+                    <span>Female</span>
+                </label>
+                <label for="other-gender" class="l-radio">
+                    <input type="radio" name="gender" id="other-gender" value="other">
+                    <span>Other</span>
+                </label>
+            </div>
+            <input class="application-input" type="text" value="" placeholder="Department" name="Department" list="dept">
+            <datalist id="dept">
+                <option value="Computer Science Engineering">
+                <option value="Information Technology">
+                <option value="Mechanical Engineering">
+                <option value="Electrical Engineering">
+                <option value="Chemical Engineering">
+                <option value="Production Engineering">
+                <option value="Textile Engineering">
+                <option value="Biotechnology Engineering">
+                <option value="Instrumentation And Electronics Engineering">
+                <option value="Electronics And telecommunication">
+                <option value="Civil Engineering">
+                <option value="Food Technology Engineering">
+                <option value="Power Engineering">
+                <option value="Metallurgy Engineering">
+                <option value="Printing Engineering">
+                <option value="Pharmacy">
+                <option value="Architechture">
+            </datalist>
+            <input class="application-input" type="number" value="" placeholder="Roll Number" name="Roll Number">
+            <input class="application-input" min="1900" max="2099" step="1" type="number" value=""
+                placeholder="Year Admitted" name="Year Admitted">
+
+            <input type="date" name="" id="birthdate" class="application-input">
+            <input class="application-input" type="text" value="" placeholder="Blood Group" name="Blood Group" list="blood">
+            <datalist id="blood">
+                <option value="O+">
+                <option value="O−">
+                <option value="A+">
+                <option value="A-">
+                <option value="B+">
+                <option value="B-">
+                <option value="AB+">
+                <option value="AB-">
+            </datalist>
+            <input class="application-input" type="number" value="" placeholder="Contact Number" name="Contact Number">
+            <input class="application-input" type="email" value="" placeholder="Email Id" name="Email Id">
+            <input class="submit-button" type="submit" value="Submit Application">
+        </form>
+    </div>
+    <script src="/JS/application.js"></script>
+</body>
+
+</html>
