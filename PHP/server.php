@@ -55,10 +55,10 @@ $user=mysqli_fetch_array($result);
 
 if($user){
     if($user['Name']===$username){
-        array_pushh($errors, "Username already exists");
+        array_push($errors, "Username already exists");
     }
     if($user['Email']===$email){
-        array_pushh($errors, "This email id has already been used");
+        array_push($errors, "This email id has already been used");
     }
 }
 if(count($errors)===0){

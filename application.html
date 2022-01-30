@@ -11,6 +11,7 @@
 
 <body>
     <div class="container">
+        <div id="success-message"></div>
         <div class="form-heading">
             <div class="colour-only">Hostel Application Form</div>
             <div class="wave">
@@ -30,25 +31,25 @@
                 </svg>
             </div>
         </div>
-        <form action="#" method="post" id="application-form">
-            <input class="application-input" type="text" value="" placeholder="Name" name="Name">
-            <input class="application-input" type="text" value="" placeholder="Father’s Name" name="Father’s Name">
-            <input class="application-input" type="text" value="" placeholder="Mother’s Name" name="Mother’s Name">
+        <form id="application-form">
+            <input class="application-input" type="text" value="" placeholder="Name" name="name">
+            <input class="application-input" type="text" value="" placeholder="Father’s Name" name="fatherName">
+            <input class="application-input" type="text" value="" placeholder="Mother’s Name" name="motherName">
             <div class="address">
-                <input class="address-input application-input" type="text" placeholder="Permanent Address">
-                <input class="address-input application-input" type="text" placeholder="City">
-                <input class="address-input application-input" type="text" placeholder="District" list="district">
-                <input class="address-input application-input" type="text" placeholder="State" list="state">
-                <input class="address-input application-input" type="number" placeholder="Pincode">
+                <input class="address-input application-input" type="text" placeholder="Permanent Address" name="address">
+                <input class="address-input application-input" type="text" placeholder="City" name="city">
+                <input class="address-input application-input" type="text" placeholder="District" list="district" name="district">
+                <input class="address-input application-input" type="text" placeholder="State" list="state" name="state">
+                <input class="address-input application-input" type="number" placeholder="Pincode" name="pincode">
             </div>
-            <div class="upload-file">
+            <!-- <div class="upload-file">
                 <label for="profile-photo">Upload Photo</label>
                 <input class="application-input" type="file" value="" id="profile-photo">
             </div>
             <div class="upload-file">
                 <label for="identification-proof">Upload Identification Proof</label>
                 <input class="application-input" type="file" value="" id="identification-proof">
-            </div>
+            </div> -->
             <div class="gender-input">
                 <label for="male-gender" class="l-radio">
                     <input type="radio" name="gender" id="male-gender" value="male">
@@ -63,8 +64,7 @@
                     <span>Other</span>
                 </label>
             </div>
-            <input class="application-input" type="text" value="" placeholder="Department" name="Department"
-                list="dept">
+            <input class="application-input" type="text" value="" placeholder="Department" name="department" list="dept">
             <datalist id="dept">
                 <option value="Computer Science Engineering">
                 <option value="Information Technology">
@@ -84,13 +84,11 @@
                 <option value="Pharmacy">
                 <option value="Architechture">
             </datalist>
-            <input class="application-input" type="number" value="" placeholder="Roll Number" name="Roll Number">
-            <input class="application-input" min="1900" max="2099" step="1" type="number" value=""
-                placeholder="Year Admitted" name="Year Admitted">
+            <input class="application-input" type="number" value="" placeholder="Roll Number" name="roll">
+            <input class="application-input" min="1900" max="2099" step="1" type="number" value="" placeholder="Year Admitted" name="year">
 
-            <input type="date" name="" id="birthdate" class="application-input">
-            <input class="application-input" type="text" value="" placeholder="Blood Group" name="Blood Group"
-                list="blood">
+            <input type="date" name="birthday" id="birthdate" class="application-input">
+            <input class="application-input" type="text" value="" placeholder="Blood Group" list="blood" name="bloodGroup">
             <datalist id="blood">
                 <option value="O+">
                 <option value="O−">
@@ -101,8 +99,8 @@
                 <option value="AB+">
                 <option value="AB-">
             </datalist>
-            <input class="application-input" type="number" value="" placeholder="Contact Number" name="Contact Number">
-            <input class="application-input" type="email" value="" placeholder="Email Id" name="Email Id">
+            <input class="application-input" type="number" value="" placeholder="Contact Number" name="contactNumber">
+            <input class="application-input" type="email" value="" placeholder="Email Id" name="email">
             <input class="submit-button" type="submit" value="Submit Application">
         </form>
     </div>
