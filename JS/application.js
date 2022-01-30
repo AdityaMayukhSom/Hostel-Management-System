@@ -1,12 +1,11 @@
 const signup = document.querySelector('.submit-button');
 const form = document.querySelector('#application-form');
-const php = "model.php";
+const php = "./PHP/server.php";
 const formData = new FormData(form);
 
-
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
 
+    e.preventDefault();
 
     fetch(php, {
         method: 'POST',
