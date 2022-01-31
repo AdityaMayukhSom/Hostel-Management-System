@@ -14,9 +14,9 @@ function saveData() {
         formData.append(applicationElement[count].name, applicationElement[count].value);
     }
     var ajaxRequest = new XMLHttpRequest();
-    ajaxRequest.open("GET", php);
+    ajaxRequest.open('POST', php);
     ajaxRequest.send(formData);
-    ajaxRequest.onreadystatechange = function() {
+    ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
             document.getElementById("application-form").reset();
             // document.getElementById('success-message').innerHTML = ajaxRequest.responseText;

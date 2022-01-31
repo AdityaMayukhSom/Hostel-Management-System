@@ -2,27 +2,28 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Methods: GET,POST');
+header('Access-Control-Allow-Headers: X-Requested-With');
 header('content-type:application/json');
 
-if (isset($_GET["name"]))
+if (isset($_POST["name"]))
 {
     $connect = new PDO("mysql:host=localhost; dbname=testing", "root", "");
     $data = array(
-        ':name' => $_GET["name"],
-        ':fatherName' => $_GET["fatherName"],
-        ':motherName' => $_GET["motherName"],
-        ':address' => $_GET["address"],
-        ':city' => $_GET["city"],
-        ':district' => $_GET["district"],
-        ':state' => $_GET["state"],
-        ':pincode' => $_GET["pincode"],
-        ':gender' => $_GET["gender"],
-        ':department' => $_GET["department"],
-        ':roll' => $_GET["roll"],
-        ':birthday' => $_GET["birthday"],
-        ':bloodGroup' => $_GET["bloodGroup"],
-        ':contactNumber' => $_GET["contactNumber"],
-        ':email' => $_GET["email"],
+        ':name' => $_POST["name"],
+        ':fatherName' => $_POST["fatherName"],
+        ':motherName' => $_POST["motherName"],
+        ':address' => $_POST["address"],
+        ':city' => $_POST["city"],
+        ':district' => $_POST["district"],
+        ':state' => $_POST["state"],
+        ':pincode' => $_POST["pincode"],
+        ':gender' => $_POST["gender"],
+        ':department' => $_POST["department"],
+        ':roll' => $_POST["roll"],
+        ':birthday' => $_POST["birthday"],
+        ':bloodGroup' => $_POST["bloodGroup"],
+        ':contactNumber' => $_POST["contactNumber"],
+        ':email' => $_POST["email"],
     );
 
     $query = "INSERT INTO data_sample 
