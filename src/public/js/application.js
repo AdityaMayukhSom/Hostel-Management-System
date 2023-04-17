@@ -19,18 +19,10 @@ function saveData() {
     ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
             document.getElementById("application-form").reset();
-            // document.getElementById('success-message').innerHTML = ajaxRequest.responseText;
-            // setTimeout(function() {
-            //     document.getElementById('success-message').innerHTML = '';
-            // }, 2000);
             console.log(ajaxRequest.responseText);
         }
     }
 }
-
-
-
-
 
 // form.addEventListener('submit', (e) => {
 //     e.preventDefault();
