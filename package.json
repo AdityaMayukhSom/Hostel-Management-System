@@ -6,7 +6,7 @@
 	"scripts": {
 		"clean": "rimraf build",
 		"copy-assets": "xcopy /S /I /D /Y src\\public build\\public",
-		"build": "npm run clean && tsc && npm run copy-assets",
+		"build": "npm run clean && tsc",
 		"start": "node build/app.js",
 		"dev": "nodemon src/app.ts"
 	},
@@ -18,7 +18,7 @@
 		"hostel-management-system"
 	],
 	"author": "aditya mayukh som",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/AdityaMayukhSom/hostel-management-system/issues"
 	},
