@@ -3,7 +3,6 @@ import { port } from './controllers/environment';
 import path from 'path';
 import cors from 'cors';
 import express from 'express';
-import bodyParser from 'body-parser';
 
 // this is the root directory path for the project
 const rootDir = path.resolve(__dirname, '..')
@@ -11,7 +10,7 @@ const rootDir = path.resolve(__dirname, '..')
 const app = express();
 
 app.use(cors())
-app.use(bodyParser.json())
+app.use(express.json())
 app.use(express.static(path.join(rootDir, "public")))
 
 app.set('views', path.join(rootDir, "views"));
