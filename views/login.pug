@@ -1,9 +1,11 @@
 doctype html
 html(lang=en)  
-    head 
-        title login 
-    body 
-        form(action="/login-handler") 
-            input#(type="email", name="email")
-            input#(type="password", name="password")
-            input(type="button", value="submit")
+  head 
+    title Student Login
+  body 
+    include components/nav.pug
+    +navbar
+    form(action="/login-handler") 
+      input(type="email" name="email")
+      input(type="password" name="password")
+      input(type="button" value="submit")

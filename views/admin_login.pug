@@ -1,14 +1,24 @@
+
 doctype html 
 html 
-    head 
-        title Login
-    body
-        .heading Admin Login
-        form(method = 'post' action = '#' name = 'adminLogin')
-            input(type = 'text' placeholder = "Enter your Username" name = "adminUsername")
-            input(type = 'password' placeholder = "Enter your Password" name = "adminPassword")
-        button Log-In 
-        br
-        a(href = "#") Forgot Password
-        br
-        a(href = "./new_admin.html") New Admin? Enter Details Here!
+	head 
+		title Admin Login
+	body
+		include components/nav.pug
+		+navbar
+		h2 Admin Login
+		form(method = 'post' action = '#' name = 'adminLogin')
+			table 
+				tr 
+					td  Userame 
+					td
+						input(type = 'text' placeholder = "Enter your Username" name = "adminUsername")
+				tr 
+					td  Password
+					td 
+						input(type = 'password' placeholder = "Enter your Password" name = "adminPassword")
+			button Log-In 
+		br
+		a(href = "#") Forgot Password
+		br
+		a(href = "./new_admin.html") New Admin? Enter Details Here!

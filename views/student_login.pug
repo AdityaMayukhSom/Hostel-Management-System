@@ -1,14 +1,24 @@
 doctype html 
 html 
-    head 
-        title Login
-    body
-        .heading Student Login
-        form(method = 'post' action = '#' name = 'studentLogin')
+  head 
+    title Login
+  body
+    include components/nav.pug
+    +navbar
+    h2 Student Login
+    hr
+    form(method = 'post', name = 'studentLogin')
+      table 
+        tr 
+          td  Userame 
+          td
             input(type = 'text' placeholder = "Enter your Username" name = "studentUsername")
+        tr 
+          td  Password
+          td 
             input(type = 'password' placeholder = "Enter your Password" name = "studentPassword")
-        button Log-In 
-        br
-        a(href = "#") Forgot Password
-        br
-        a(href = "./application_form.html") New User? Apply Now!
+      button Log In 
+    br
+    a(href = "#") Forgot Password
+    br
+    a(href = "/application-form") New User? Apply.
