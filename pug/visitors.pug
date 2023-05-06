@@ -1,0 +1,37 @@
+doctype html 
+html 
+    head 
+        title VisitorsDetails 
+    body 
+        .heading Enter details about visit 
+        br
+        form(method = 'GET', action = './', name = 'adminApplicationForm')
+            table 
+                tr 
+                    td  Name of Student 
+                    td
+                        input(type = 'text' placeholder = "Name Of Student" name = 'studentName')
+                tr 
+                    td Roll Number 
+                    td 
+                        input(type = 'number' placeholder = "Roll Number" name = 'rollNumber')
+                tr
+                    td  Room Number 
+                    td 
+                        input(type = 'number' placeholder = "Room Number" name = 'roomNumber')
+                tr 
+                    td Name of Visitor 
+                    td 
+                        input(type = 'text' placeholder = "Name Of Visitor" name = 'visitorName')
+                tr 
+                    td Relation with Student 
+                    td 
+                        input(type = 'text' placeholder = "Relation with Student" name = 'relation')
+                tr  
+                    td Date of Visit 
+                    td 
+                        input(type = 'date' placeholder = "Date of Visit" name = 'visitDate')
+                tr 
+                    td(colspan = '2', align = 'center')
+                        input(type = 'submit', value = 'Submit')
+
